@@ -17,7 +17,7 @@
     </header>
     <main>
         <div class="container">
-            <div class="imagecarousel">
+            <div class="imagecarousel" onload="setInterval()">
                 <div class="image fadeout"><img src="images/frog_1.jpg" alt=""></div>
                 <div class="image fadeout"><img src="images/frog_2.jpg" alt=""></div>
                 <div class="image fadeout"><img src="images/frog_3.jpg" alt=""></div>
@@ -32,10 +32,10 @@
                 <div class="image fadeout"><img src="images/frog_12.jpg" alt=""></div>
                 <div class="image fadeout"><img src="images/frog_13.jpg" alt=""></div>
                 <div class="prev">
-                    <i class="fa-solid fa-arrow-left" onclick="setInterval()"></i>
+                    <i class="fa-solid fa-arrow-left" onclick="showImages(-1)"></i>
                 </div>
                 <div class="next">
-                    <i class="fa-solid fa-arrow-right" onclick="setInterval()"></i>
+                    <i class="fa-solid fa-arrow-right" onclick="showImages(1)"></i>
                 </div>
             </div>
         </div>
