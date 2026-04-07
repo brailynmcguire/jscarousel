@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/00485dc981.js" crossorigin="anonymous"></script>
     <title>JS Slideshow</title>
 </head>
 <body>
@@ -30,10 +31,16 @@
                 <div class="image fadeout"><img src="images/frog_11.jpg" alt=""></div>
                 <div class="image fadeout"><img src="images/frog_12.jpg" alt=""></div>
                 <div class="image fadeout"><img src="images/frog_13.jpg" alt=""></div>
+                <div class="prev">
+                    <i class="fa-solid fa-arrow-left" onclick="setInterval()"></i>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-arrow-right" onclick="setInterval()"></i>
+                </div>
             </div>
         </div>
         <div class="dots">
-            <span class="dot"></span>
+            <span class="dot active"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -49,7 +56,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy;<span id="copyright"></span> Michael Roberts Productions</p>
+        <p>&copy;<span id="copyright"></span> Brailyn McGuire</p>
     </footer>
 </body>
 </html>
